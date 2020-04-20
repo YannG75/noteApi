@@ -44,7 +44,7 @@ class NotesController extends Controller
     {
         $data = (object)[
             'error' => null,
-            'note' => []
+            'note' => (object) []
         ];
         try{
 
@@ -68,7 +68,7 @@ class NotesController extends Controller
     {
         $data = (object)[
             'error' => null,
-            'note' => []
+            'note' => (object) []
         ];
         try{
             $data->note =Notes::findOrFail($id);
@@ -104,7 +104,7 @@ class NotesController extends Controller
     {
         $data = (object)[
             'error' => null,
-            'note' => []
+            'note' => (object) []
         ];
         try{
             Notes::findOrFail($id)->update($request->all());
