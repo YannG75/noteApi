@@ -94,8 +94,11 @@
                 justify-content: space-between;
 
                 p {
-                    height: 100%;
+                    width: 80%;
+                    height: 35px;
+                    line-height: 35px;
                     white-space: nowrap;
+                    margin: 5px 0;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
