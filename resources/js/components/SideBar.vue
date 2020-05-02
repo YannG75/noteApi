@@ -105,6 +105,7 @@
 
                 button {
                     background: rgba(255, 0, 0, 0.56);
+                    box-shadow: darkgrey 1px 1px 1px;
                     border: none;
                     opacity: 0;
                     width: 0;
