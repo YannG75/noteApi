@@ -7,8 +7,8 @@
         </div>
 
         <ul>
-            <li v-for="(note, index) in getAllNotes" @click="getOneNote(note.id)">
-                <p>{{note.content}}</p>
+            <li v-for="(note, index) in getAllNotes" >
+                <p @click="getOneNote(note.id)">{{note.content}}</p>
                 <button @click="deleteNote(note.id)"><i class="far fa-trash-alt"></i></button>
             </li>
         </ul>
@@ -94,6 +94,7 @@
                 justify-content: space-between;
 
                 p {
+                    height: 100%;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
