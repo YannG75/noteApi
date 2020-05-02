@@ -52,7 +52,7 @@ class NotesController extends Controller
             return response()->json($data);
         }
         catch (\Exception $e){
-            $data->error = "une Erreur est survenu ! Do u know Da WAY ?";
+            $data->error = "une Erreur est survenu !";
             return response()->json($data, 404);
         }
 
@@ -112,7 +112,7 @@ class NotesController extends Controller
             return response()->json($data, 200);
         }
         catch (\Exception $e){
-            $data->error = "une Erreur est survenu ! Do u know Da WAY ?";
+            $data->error = "une Erreur est survenu !";
             return response()->json($data, 404);
         }
     }
